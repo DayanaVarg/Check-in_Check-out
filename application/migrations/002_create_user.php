@@ -11,7 +11,6 @@ class Migration_create_user extends CI_Migration {
                 'type' => 'VARCHAR',
                 'constraint' => '10',
                 'unsigned' => TRUE,
-                'auto_increment'=> TRUE
             ),
             'name' => array(
                 'type'=>'VARCHAR',
