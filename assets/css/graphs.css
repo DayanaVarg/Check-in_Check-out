@@ -1,0 +1,98 @@
+:root{
+	--Card-color1: #D9F2EF;
+	--Card-subcolor1:#B0E4DD;
+	--Card-color2:#008774 ;
+	--Card-subcolor2:#00A991;
+	--Card-color3:#386283 ;
+	--Card-subcolor3:#467BA4;
+}
+.cardG{
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	border-radius: 12px;
+	margin-left: 20%;
+	height: 90%;
+	width: 60%;
+}
+
+.cardE{
+	background-color: var(--Card-color1);
+}
+
+.div1{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 30%;
+	height: 75%;
+}
+.circle{
+	background-color: var(--Card-subcolor1);
+	border-radius: 100%;
+	padding: 4%;
+	height: 40%;
+	width: 15%;
+	text-align: center;
+
+}
+
+.circle span{
+	font-size: 15px;
+	font-weight: bold;
+	font-family: var(--body-font);
+}
+
+.div1 img{
+	height: 70%;
+}
+
+.div2{
+	background-color: var(--Card-subcolor1) ;
+	border-radius: 0 0 12px 12px;
+	height: 25%;
+	text-align: center;
+	padding: 3%;
+}
+
+.div2 span{
+	margin-top: 0;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: var(--body-font);
+}
+/*Card vistor*/
+.cardV{
+	background-color:var(--Card-color2) ;
+	color: white;
+}
+.v{
+	background-color: var(--Card-subcolor2);
+}
+
+/*card total*/
+.cardT{
+	color: white;
+	background-color: var(--Card-color3);
+}
+.t{
+	background-color: var(--Card-subcolor3);
+}
+.grap{
+	grid-column: 1/4;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+#chart_div{
+	margin-left: 8%;
+	width: 760px; 
+	height: 400px;
+
+}
+
+#fech_div{
+	margin-left: 5%;
+	width: 760px; 
+	
+}

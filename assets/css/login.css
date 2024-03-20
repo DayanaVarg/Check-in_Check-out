@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+	padding: 0;
+	margin: 0;
+}
+:root {
+    /*colors*/
+	--color1: #d9d6d6;
+	--color2: rgba(217, 234, 234, 0.75);
+	--color3:rgb(70, 123, 164);
+	/*fonts*/
+	--body-font: "Poppins", sans-serif;
+
+}
+.body{
+	background-color: var(--color1);
+
+}
+.custom-alert{
+	margin: 1%;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+}
+
+
+
+.cont-form{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 390px;
+	width: 430px;
+	border-radius: 12px;
+}
+.cont-cab{
+	background-color: var(--color3);
+	width: 100%;
+	height: 100px;
+	border-radius: 12px 12px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cont-cab h2{
+	color: white;
+	font-family: var(--body-font);
+	font-size: 28px;
+}
+.form-info{
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	margin-top:8%;
+	font-family: var(--body-font);
+}
+
+.form-info label{
+	font-size: 15px;
+	margin-bottom: 8px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #002166;
+}
+
+.form-info input
+{
+	font-family: var(--body-font);
+	font-size: 14px;
+	height: 38px;
+	margin-bottom: 13px;
+	border: none;
+	border-bottom: solid var(--color3) 2px;
+	border-radius: 2px;
+	background-color: transparent;
+	outline: none;
+}
+
+.space-button{
+	position: relative;
+}
+
+.space-button a{
+	color:#467ba4;
+	position: absolute;
+	margin-top: 25px
+}
+.space-button a:hover{
+	color: #3f6f94;
+}
+.space-button a:active{
+	color: #386283;
+}
+.space-button button{
+	background-color: var(--color3) ;
+	height: 40px;
+	margin-top: 13px;
+	width: 30%;
+	margin-left: 70%;
+	border: none;
+	border-radius:8px ;
+	position: absolute;
+	font-family: var(--body-font);
+	font-weight: bolder;
+	font-size: 15px;
+	color: white;
+}
+
+.msg{
+	margin-top: 60px;
+	color: #ef0b12;
+}
+
+

@@ -1,0 +1,146 @@
+
+.botonespace{
+    position: absolute;
+    left: 85% ;
+    margin-top: 4.3%;
+
+}
+    
+.buttonR {
+    position: relative;
+    width: 100px;
+    font-weight: 400;
+    font-family: var(--body-font);
+    font-size: 15px;
+    background: var(--colorVe);
+    color: white;
+    padding-block: 8px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+}
+    
+
+.Container-modal {
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+}
+
+.formModal {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 550px;
+    padding: 35px;
+    border-radius: 20px;
+    position: absolute;
+    background: linear-gradient(0deg, rgb(238, 238, 238) 0%, rgb(244, 250, 255) 100%);
+    border: 5px solid rgb(252, 248, 248);
+    box-shadow: 3px 4px 9px 1px var(--colorL);
+    justify-content: center;
+    align-items: center;
+}
+
+.closeB {
+    position: absolute;
+    top: 5px;
+    right: 19px;
+    font-size: 25px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.title {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 28px;
+    font-family: var(--body-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--colorL);
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.formModal label {
+    position: relative;
+}
+
+.formModal label .input {
+    background: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    padding: 30px 9px 9px 15px;
+    border-radius: 10px;
+    border: 0.1px solid rgba(223, 222, 222, 0.397);
+    border-radius: 10px;
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.2);
+}
+
+.formModal label .input+span {
+    font-weight: 500;
+    color: #6b6b6b;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+
+.formModal label .input:focus+span,
+.formModal label .input:valid+span {
+    color: var(--colorL);
+    top: 6px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.formModal .input:focus {
+    outline: none;
+    border-inline: 3px solid var(--colorL);
+}
+
+.input {
+    font-size: medium;
+}
+
+
+.submit {
+    letter-spacing: 1px;
+    width: 50%;
+    font-size: 15px;
+    font-family: var(--body-font);
+    font-weight: bold;
+    background: var(--colorL);
+    color: white;
+    padding-block: 15px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.submit:hover {
+    background-color: var(--colorHover);
+    transform: scale(1.06);
+}
+

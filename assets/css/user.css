@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+	padding: 0;
+	margin: 0;
+}
+:root {
+	--header-height: 3.5rem;
+	--nav-width: 219px;
+	/*Colores*/
+	--first-color: #155694;
+	--text-color: #020202;
+	--text-color-light: #0e4375;
+	--container-color: white;
+	--body-color: #dfdbdf;
+	--header-color: rgb(70, 123, 164);
+	/*fonts*/
+	--body-font: "Poppins", sans-serif;
+	--color1: #d9d6d6;
+	--color2: rgba(217, 234, 234, 0.75);
+	--color3:rgb(70, 123, 164);
+	--z-fixed:100;
+	/*botones*/
+	--colorL:#467ba4;
+	--colorHover:#3f6f94;
+	--colorActive:#386283;
+
+}
+
+body{
+	background-color: var(--color1);
+	height: 100vh;
+	width: 100%;
+}
+/*login*/
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.cont-form{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 550px;
+	width: 500px;
+	border-radius: 12px;
+}
+.cont-cab{
+	background-color: var(--color3);
+	width: 100%;
+	height: 100px;
+	border-radius: 12px 12px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cont-cab h2{
+	color: white;
+	font-family: var(--body-font);
+	font-size: 28px;
+}
+.form-info{
+	display: flex;
+	flex-direction: column;
+	width: 87%;
+	font-family:var(--body-font);
+}
+.group-input{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	width: 440px;
+}
+
+.inputG{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 3px;
+}
+
+.form-info label{
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #002166;
+	margin-top: 27px;
+}
+
+.form-info input,
+.form-info select{
+	font-family:var(--body-font);
+	width: 95%;
+	font-size: 14px;
+	height: 35px;
+	border: none;
+	border-bottom: solid var(--color3) 2px;
+	border-radius: 2px;
+	background-color: transparent;
+	outline: none;
+}
+
+
+.space-button{
+	position: relative;
+}
+
+.space-button a{
+	color:#467ba4;
+	position: absolute;
+	margin-top: 32px
+}
+.space-button a:hover{
+	color: #3f6f94;
+}
+.space-button a:active{
+	color: #386283;
+}
+.space-button button{
+	background-color: var(--color3) ;
+	height: 40px;
+	margin-top: 25px;
+	width: 30%;
+	margin-left: 70%;
+	border: none;
+	border-radius:8px ;
+	position: absolute;
+	cursor: pointer;
+	font-family:var(--body-font);
+	font-size: 15px;
+	color: white;
+}
+
+.msg{
+	margin-top: 70px;
+	color: #ef0b12;
+}
+
+/*dashboard*/
+
+.containerG{
+	margin-top: 10%;
+	padding-bottom: 5%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+	grid-auto-rows: minmax(30px, auto);
+
+}
+.card{
+	height: 310px;
+}
+
+.space-button2{
+	width: 8%;
+	margin-left: 85%;
+	margin-top: -5%;
+	float: right;
+	position: absolute;
+}
+
+.space-button2 button{
+	position: relative;
+	height: 48px;
+	width: 100%;
+	border: none;
+	border-radius: 12px;
+	background-color:var(--colorL);
+	font-size: 15px;
+	font-family: var(--body-font);
+	color: white;
+}
+
+.space-button2 button:hover{
+	background-color:var(--colorHover);
+}
+.space-button2  button:active{
+	background-color:var(--colorActive);
+}
+
+/*Button Esta*/
+.space-buttonEs{
+	width: 8%;
+
+	margin-top: -5%;
+	float: left;
+	position: absolute;
+}
+
+.space-buttonEs button{
+	position: relative;
+	height: 48px;
+	width: 100%;
+	border: none;
+	border-radius: 12px;
+	background-color:var(--colorL);
+	font-size: 15px;
+	font-family: var(--body-font);
+	color: white;
+}
+
+.space-buttonEs button:hover{
+	background-color:var(--colorHover);
+}
+.space-buttonEs  button:active{
+	background-color:var(--colorActive);
+}
+
+.card{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 10px;
+	background-color: #f6f6f6;
+	box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.2);
+	font-family: var(--body-font);
+}
+
+.space1{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	width: 62%;
+	height: 100%;
+}
+.title{
+	text-align: center;
+	height: 20%;
+	margin-top: 10%;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.space1 p{
+	font-size: 15px;
+	font-weight: bold;
+}
+.space1 p span,
+span{
+	font-size: 14px;
+	font-weight: normal;
+}
+.columns{
+	margin-bottom: 0;
+	display: grid;
+	height: 20%;
+	grid-template-columns: repeat(2, 1fr);
+}
+.column1{
+	margin-left: 40px;
+}
+.p1{
+	margin-bottom: 0;
+}
+.fec{
+	align-items: center;
+	text-align: center;
+	grid-column: 1/3;
+}
+
+.fec p img{
+	margin-right: 10%;
+	float: right;
+	height:25px;
+}
+.fec p{
+	margin-left: 10%;
+	margin-bottom: 0;
+}
+.fec-line{
+	margin-top: 5px;
+	margin-left:25px;
+	border-top: 2px solid #467ba4 ;
+	width: 85%;
+}
+.column1a{
+	margin-top: 10px;
+	margin-left: 40px;
+}
+.column2a{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+.space2{
+	padding-top: 3%;
+	background-color:#e3ebf1 ;
+	width: 38%;
+	height: 100%;
+	border-top-right-radius:12px;
+	border-bottom-right-radius:12px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.space2 p{
+	font-weight: bold;
+}
+
+.space2 img{
+	height: 45%;
+}
+
+.space2 form button{
+	margin-top: 8%;
+	height: 48px;
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 12px;
+	background-color:var(--colorL);
+	font-size: 15px;
+	color: white;
+}
+.space2 form button:hover{
+	background-color:var(--colorHover);
+}
+.space2 form button:active{
+	background-color:var(--colorActive);
+}
+
+/*Regustro usuario*/
+.contU{
+	align-content: center;
+	justify-content: center;
+	margin-top: 0;
+	grid-auto-rows: minmax(60px, auto);
+	height: 100vh;
+	width: 100%;
+}
+.al{
+	grid-column: 1/4;
+	grid-row: 1;
+	height: 60px;
+	margin-top: 0;
+}
+.formU{
+	grid-column: 2;
+
+}
+.formUs{
+	height: 50%;
+	width: 55%;
+	grid-column: 1;
+
+}
+.cont2 h2{
+	font-size: 25px;
+	letter-spacing:3px;
+}
+.cont2{
+	text-align: center;
+	padding-top: 8%;
+	align-content: center;
+	justify-content: center;
+}
+.inputU{
+	width: 100%;
+}
+.btnA{
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.btnA button{
+	font-family: var(--body-font);
+	margin-top: 8%;
+	height: 45px;
+	width: 80px;
+	border: none;
+	border-radius: 12px;
+	background-color: var(--colorL);
+	font-size: 15px;
+	color: white;
+}
+
+.btnA  button:hover{
+	background-color:var(--colorHover);
+}
+.btnA button:active{
+	background-color:var(--colorActive);
+}
+
+
+
